@@ -6,7 +6,7 @@ function Movielist() {
 const [movielist, setMovielist] = useState([])
 
 useEffect(() => {
- axios.get("http://localhost:3000/movies").then((res) => {
+ axios.get("https://qrmovie.onrender.com/movies").then((res) => {
    setMovielist(res.data);
    console.log(res.data);
  });
