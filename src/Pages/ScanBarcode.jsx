@@ -5,7 +5,7 @@ function ScanBarcode() {
   const [QRcode, setQRcode] = useState("");
 
   useEffect(() => {
-    axios.get("https://qrmovie.onrender.com/api/v1/qr").then((res) => {
+    axios.get("https://qrgen-ehcl.onrender.com/api/v1/qr").then((res) => {
       setQRcode(res.data);
       console.log(res.data);
     });
